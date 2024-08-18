@@ -62,15 +62,45 @@
 
 
 // ------ code for sum of digits in a number--------
-let num = 234566;
-let sumNum = 0;
+// let num = 234566;
+// let sumNum = 0;
 
-while(num >0){
-    sumNum = (num%10)+sumNum;
-    let num = Math.floor(num/10); 
+// while(num >0){
+//     sumNum = (num%10)+sumNum;
+//     let num = Math.floor(num/10); 
 
-}
-console.log(sumNum);
+// }
+// console.log(sumNum);
 
 
+// ------- OBJECT LITERALS -----------
+// let student = {
+//    name : "Bheesham",
+//    age: 21,
+//    marks: 99,
+//    city: "Daharki"
+// };
 
+// JS converts keys into strings so the keywords true,null, undefined are used as strings
+// let obj = {
+//     1: "a",
+//     2: "b",
+//     3: "c",
+//     true: "d",
+//     undefined: "e",
+//     null: "f"
+// };
+
+// ------- Object of Objects--------------
+// let studentInfo ={
+//     std1:{
+//         name : "aman",
+//         id:1
+//     },
+//     std2:{
+//         name: "shradha",
+//         id:2
+//     }
+// };
+
+// ------ Array of Objects ------------
