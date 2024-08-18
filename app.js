@@ -104,3 +104,13 @@
 // };
 
 // ------ Array of Objects ------------
+let studentInfo = [
+    {
+        name:"bheesham",
+        age:21
+    },
+    {
+        name:"aman",
+        age:23
+    }
+];
