@@ -116,26 +116,11 @@
 // ];
 
 // ---- Guessing Game --------
-let rangeNum = prompt("enter max range of Number");
-let guessNum = prompt("enter your guess: ");
-
-console.log("The max range is :", rangeNum);
-console.log("you guessed : ", guessNum);
-
-let randNum = Math.floor(Math.random()*rangeNum+1);
-console.log("The random number is: ", randNum);
-
-    while(guessNum!=randNum){
-         guessNum = prompt("guess Again!");
-        if(guessNum=="quit"){
-            break;
-        }
-        else if(guessNum==randNum){
-            console.log("you guessed right");
-            break;
-        }
-        console.log(guessNum,randNum);
-    }
-    
+// functions , we use functions to do tasks which are repetitive
+function hello(){
+    console.log("hello functions chapter");
+}
+hello();
+hello();
 
 
