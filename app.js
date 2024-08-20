@@ -132,8 +132,28 @@
 //     console.log(`${name}'s age is ${age}`);
 // }
 // printName("Bheesham",21);
-function printSum(num1, num2){
-    console.log("Sum is: ",num1+num2);
-}
-printSum(1,2);
-printSum(2,3);
+// function printSum(num1, num2){
+//     console.log("Sum is: ",num1+num2);
+// }
+// printSum(1,2);
+// printSum(2,3);
+
+//---Function that gives avg of three nums----
+// function printAverage(a,b,c){
+//     let avg = (a+b+c)/3;
+//     console.log("Average of numbers is :",avg );
+// }
+// printAverage(2,2,6);
+
+//---- create a function to print multiplication table of a number----
+// function printTable(num){
+// for(let i =1;i<=10;i++){
+//     console.log(num*i);
+// }
+// }
+// printTable(2);
+// printTable(3);
+// printTable(4);
+// printTable(5);
+
+
