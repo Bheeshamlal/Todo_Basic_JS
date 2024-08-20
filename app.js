@@ -117,10 +117,23 @@
 
 // ---- Guessing Game --------
 // functions , we use functions to do tasks which are repetitive
-function hello(){
-    console.log("hello functions chapter");
+// function hello(){
+//     console.log("hello functions chapter");
+// }
+// hello();
+// hello();
+
+// without argument
+// function printName(){
+//     console.log("Bheesham lal");
+// }
+//--- without argument
+// function printName(name,age){
+//     console.log(`${name}'s age is ${age}`);
+// }
+// printName("Bheesham",21);
+function printSum(num1, num2){
+    console.log("Sum is: ",num1+num2);
 }
-hello();
-hello();
-
-
+printSum(1,2);
+printSum(2,3);
