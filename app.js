@@ -207,3 +207,32 @@ function changeGreet(){
 
 console.log(greet);
 changeGreet();
+
+
+// function expressions 
+let x = function(a,b){
+    console.log(a+b);
+}
+x(2,3);
+
+// --- Higher Order Functions ---
+// function greet(){
+//     console.log("hello");
+// }
+// greet();
+// greet();
+// if I have to call this multiple times then what?
+// Then we will use Higher order functions 
+// Higher Order Functions are those which takes one or multiple functions as arguments or returns function
+
+let greeting = function(){
+    console.log("hello");
+}
+
+function multipleGreet(func, count){
+    for(let i =1;i<=count;i++){
+        func();
+    }
+}
+
+multipleGreet(greeting,3);
