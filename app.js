@@ -156,4 +156,12 @@
 // printTable(4);
 // printTable(5);
 
-
+// ----- function to print sum of n numbers ----
+function sum(n){
+    let s=0;
+    for(let i = 1;i<=n;i++){
+        s+=i;
+    }
+    return s;
+}
+console.log(sum(5));
