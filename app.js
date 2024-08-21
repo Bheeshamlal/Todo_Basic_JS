@@ -157,11 +157,23 @@
 // printTable(5);
 
 // ----- function to print sum of n numbers ----
-function sum(n){
-    let s=0;
-    for(let i = 1;i<=n;i++){
-        s+=i;
-    }
-    return s;
+// function sum(n){
+//     let s=0;
+//     for(let i = 1;i<=n;i++){
+//         s+=i;
+//     }
+//     return s;
+// }
+// console.log(sum(5));
+
+//-----function that return concatenation of all strings in an array----
+let arr = ["a","b","c","d","e"];
+function concatedArray(arr){
+    let cnctdString = ' ';
+    for(let i =0;i<arr.length;i++){
+        cnctdString = cnctdString + arr[i];
+    } 
+    return cnctdString;
 }
-console.log(sum(5));
+
+
