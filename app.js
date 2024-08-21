@@ -167,13 +167,43 @@
 // console.log(sum(5));
 
 //-----function that return concatenation of all strings in an array----
-let arr = ["a","b","c","d","e"];
-function concatedArray(arr){
-    let cnctdString = ' ';
-    for(let i =0;i<arr.length;i++){
-        cnctdString = cnctdString + arr[i];
-    } 
-    return cnctdString;
+// let arr = ["a","b","c","d","e"];
+// function concatedArray(arr){
+//     let cnctdString = ' ';
+//     for(let i =0;i<arr.length;i++){
+//         cnctdString = cnctdString + arr[i];
+//     } 
+//     return cnctdString;
+// }
+
+
+//----Understanding scope-------
+//function scope
+function calSum(a,b){
+    let sum = a+b;
+    console.log(sum);  // this sum will be printed
+}
+calSum(1,2);
+// console.log(sum);    cannot access sum varable
+
+//Block scope
+{
+    let a =20;
+    console.log(a);
+}
+// console.log(a);   cannot access a here 
+// Note block scope is not used on var keyword variables because block scope came in 2015
+
+let greet = "hello"; // global scope
+
+function changeGreet(){
+    let greet = "namaste"; // function scope
+    console.log(greet); // function scope fight with global wins always function scope
+    function inner(){
+        console.log(greet); //lexical scope, this will not get executed because it is not called
+    }
+    // inner();
 }
 
-
+console.log(greet);
+changeGreet();
