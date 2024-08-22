@@ -179,41 +179,41 @@
 
 //----Understanding scope-------
 //function scope
-function calSum(a,b){
-    let sum = a+b;
-    console.log(sum);  // this sum will be printed
-}
-calSum(1,2);
+// function calSum(a,b){
+//     let sum = a+b;
+//     console.log(sum);  // this sum will be printed
+// }
+// calSum(1,2);
 // console.log(sum);    cannot access sum varable
 
 //Block scope
-{
-    let a =20;
-    console.log(a);
-}
+// {
+//     let a =20;
+//     console.log(a);
+// }
 // console.log(a);   cannot access a here 
 // Note block scope is not used on var keyword variables because block scope came in 2015
 
-let greet = "hello"; // global scope
+// let greet = "hello"; // global scope
 
-function changeGreet(){
-    let greet = "namaste"; // function scope
-    console.log(greet); // function scope fight with global wins always function scope
-    function inner(){
-        console.log(greet); //lexical scope, this will not get executed because it is not called
-    }
+// function changeGreet(){
+//     let greet = "namaste"; // function scope
+//     console.log(greet); // function scope fight with global wins always function scope
+//     function inner(){
+//         console.log(greet); //lexical scope, this will not get executed because it is not called
+//     }
     // inner();
-}
+// }
 
-console.log(greet);
-changeGreet();
+// console.log(greet);
+// changeGreet();
 
 
-// function expressions 
-let x = function(a,b){
-    console.log(a+b);
-}
-x(2,3);
+// // function expressions 
+// let x = function(a,b){
+//     console.log(a+b);
+// }
+// x(2,3);
 
 // --- Higher Order Functions ---
 // function greet(){
@@ -225,14 +225,33 @@ x(2,3);
 // Then we will use Higher order functions 
 // Higher Order Functions are those which takes one or multiple functions as arguments or returns function
 
-let greeting = function(){
-    console.log("hello");
-}
+// let greeting = function(){
+//     console.log("hello");
+// }
 
-function multipleGreet(func, count){
-    for(let i =1;i<=count;i++){
-        func();
+// function multipleGreet(func, count){
+//     for(let i =1;i<=count;i++){
+//         func();
+//     }
+// }
+
+// multipleGreet(greeting,3);
+
+function oddEven(req){
+    if(req=="odd"){
+        let odd = function(n){
+            
+                console.log(!(n%2==0));
+        }
+        return odd;
+    }
+    else if(req=="even"){
+        let even =  function(n){ 
+            console.log(n%2==0);
+        } 
+   }
+    else{
+        console.log("error");
     }
 }
-
-multipleGreet(greeting,3);
+let req = "odd";
