@@ -237,21 +237,39 @@
 
 // multipleGreet(greeting,3);
 
-function oddEven(req){
-    if(req=="odd"){
-        let odd = function(n){
+// function oddEven(req){
+//     if(req=="odd"){
+//         let odd = function(n){
             
-                console.log(!(n%2==0));
-        }
-        return odd;
-    }
-    else if(req=="even"){
-        let even =  function(n){ 
-            console.log(n%2==0);
-        } 
-   }
-    else{
-        console.log("error");
-    }
-}
-let req = "odd";
+//                 console.log(!(n%2==0));
+//         }
+//         return odd;
+//     }
+//     else if(req=="even"){
+//         let even =  function(n){ 
+//             console.log(n%2==0);
+//         } 
+//    }
+//     else{
+//         console.log("error");
+//     }
+// }
+// let req = "odd";
+
+// ---- Methods ----
+// Actions that can be performed on an object
+// functions as values inside an object are called methods
+
+const calculator = {
+    num: 55,
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b;
+    },
+
+};
