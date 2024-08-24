@@ -374,19 +374,25 @@
 
 // num of vowels in string argument
 
-function vow(str){
-    let count =0;
-    for(let i=0;i<str.length;i++){
-        if(str[i]=="a" || str[i]=="e" || str[i]=="i"|| str[i]=="o"|| str[i]=="u"){
-            count++;
-        }
-    }
-    console.log(count);
+// function vow(str){
+//     let count =0;
+//     for(let i=0;i<str.length;i++){
+//         if(str[i]=="a" || str[i]=="e" || str[i]=="i"|| str[i]=="o"|| str[i]=="u"){
+//             count++;
+//         }
+//     }
+//     console.log(count);
     
-}
-vow("Bheesham");
+// }
+// vow("Bheesham");
 
 
+// function to generate a random number within a range
+let rangeStart = prompt("enter num start range");
+let rangeEnding = prompt("enter num  end range");
+
+let num = Math.floor((Math.random()*rangeEnding)+rangeStart);
+console.log("random num is :", num);
 
 
 
