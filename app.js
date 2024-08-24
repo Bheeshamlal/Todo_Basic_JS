@@ -303,20 +303,108 @@
 // Example: str = “abcdabcdefgggh” ans = “abcdefgh”
 
 
-let str = "abcdabcdefgggh"; 
-//function to get String with all unique elements 
-function getUnique(str) {
-    let ans = "";
-    for (let i = 0; i < str.length; i++) { 
-        let currChar = str[i]; 
-        if (ans.indexOf(currChar) == -1) { 
-        //if current character is not added, then add it in  
-        //Otherwise it is a duplicate. 
-        ans += currChar; 
-        } 
-        } 
-        return ans; 
+// let str = "abcdabcdefgggh"; 
+// //function to get String with all unique elements 
+// function getUnique(str) {
+//     let ans = "";
+//     for (let i = 0; i < str.length; i++) { 
+//         let currChar = str[i]; 
+//         if (ans.indexOf(currChar) == -1) { 
+//         //if current character is not added, then add it in  
+//         //Otherwise it is a duplicate. 
+//         ans += currChar; 
+//         } 
+//         } 
+//         return ans; 
 
+// }
+
+// getUnique(str);
+// let str = "abcdabcfghgab";
+// let ans ="";
+// // indexOf(a) == -1 is used to check if the value a is not present in a given array or string.
+// function getUnique(str){
+// for(let i =0;i<str.length;i++){
+//     let currChar = str[i];
+//     if(ans.indexOf(currChar) == -1){
+//         ans+=currChar;
+//     }
+// }
+// return ans;
+// }
+// getUnique(str);
+
+
+// let country = [];
+
+// function addCountry(count){
+//     for(let i =1;i<=count;i++){
+// let nameOfCountry = prompt("enter country name for list");
+// console.log("country name added: ", country.push(nameOfCountry));
+//     }
+//     let ans = "";
+//     for(let j =0;j<country.length;j++){
+//         if(country[j]>ans){
+//             ans = country[j];
+//         }
+//         console.log(country[j].length);
+//     }
+//     console.log(ans); 
+//     }
+
+// addCountry(3);
+
+
+//  another way
+// let country = ["Australia", "Germany", "United States of America"]; 
+     
+//     function longestName(country) { 
+//     let ansIdx = 0; 
+//     for (let i = 0; i < country.length; i++) { 
+//     let ansLen = country[ansIdx].length; 
+//     let currLen = country[i].length; 
+//     if (currLen > ansLen) { 
+//     ansIdx = i; 
+//     } 
+//     } 
+//     return country[ansIdx]; 
+//     } 
+     
+//    console.log(longestName(country)); 
+
+// num of vowels in string argument
+
+function vow(str){
+    let count =0;
+    for(let i=0;i<str.length;i++){
+        if(str[i]=="a" || str[i]=="e" || str[i]=="i"|| str[i]=="o"|| str[i]=="u"){
+            count++;
+        }
+    }
+    console.log(count);
+    
 }
+vow("Bheesham");
 
-getUnique(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
