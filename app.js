@@ -388,20 +388,28 @@
 
 
 // function to generate a random number within a range
-let rangeStart = prompt("enter num start range");
-let rangeEnding = prompt("enter num  end range");
+// let rangeStart = prompt("enter num start range");
+// let rangeEnding = prompt("enter num  end range");
 
-let num = Math.floor((Math.random()*rangeEnding)+rangeStart);
-console.log("random num is :", num);
-
-
+// let num = Math.floor((Math.random()*rangeEnding)+rangeStart);
+// console.log("random num is :", num);
 
 
+// // -- try and catch---
+// console.log("hello");
+// console.log(a); // this will give error
+// console.log("hello"); // and due to above error this statement will not be executed
 
-
-
-
-
+// Therefore we use try and catch
+// console.log("hello");
+// let a =5; if this is written then it will normally print 5, because try has not throw error
+// try{
+//     console.log(a); // we can not write only try block
+// }catch(e){
+//     console.log("a does not exist");
+//     console.log(e);
+// }
+// console.log("hello");
 
 
 
