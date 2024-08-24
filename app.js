@@ -260,16 +260,63 @@
 // Actions that can be performed on an object
 // functions as values inside an object are called methods
 
-const calculator = {
-    num: 55,
-    add: function(a,b){
-        return a+b;
-    },
-    sub: function(a,b){
-        return a-b;
-    },
-    mul: function(a,b){
-        return a*b;
-    },
+// const calculator = {
+//     num: 55,
+//     add: function(a,b){
+//         return a+b;
+//     },
+//     sub: function(a,b){
+//         return a-b;
+//     },
+//     mul: function(a,b){
+//         return a*b;
+//     },
 
-};
+// };
+
+//-- Short hand way to write methods in Objects
+// const calculator = {
+//     num:44,
+//     add(a,b){
+//         return a+b;
+//     },
+//     sub(a,b){
+//         return a+b;
+//     },
+//     mul(a,b){
+//         return a+b;
+//     },
+
+// }
+// ---  Write a JavaScript function that returns array elements larger than a number ---
+// let arr = [1,2,3,4,5,6,7,8];
+
+// function retArr(n){
+//     for(let i =0; i<arr.length;i++){
+//         if(arr[i]>n){
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+
+// ----Write a JavaScript function to extract unique characters from a string. 
+// Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+
+
+let str = "abcdabcdefgggh"; 
+//function to get String with all unique elements 
+function getUnique(str) {
+    let ans = "";
+    for (let i = 0; i < str.length; i++) { 
+        let currChar = str[i]; 
+        if (ans.indexOf(currChar) == -1) { 
+        //if current character is not added, then add it in  
+        //Otherwise it is a duplicate. 
+        ans += currChar; 
+        } 
+        } 
+        return ans; 
+
+}
+
+getUnique(str);
