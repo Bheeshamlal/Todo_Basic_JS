@@ -415,26 +415,33 @@
 // Arrow functions are nameless functions even they do not use function word in defining them
 // Arrow functions are generally used in higher order functions as arguments 
 // these arguments and arrow functions are called 'Callbacks'
-let sum = (a,b) => {
-    console.log(a+b);
-}
-sum(2,3);
+// let sum = (a,b) => {
+//     console.log(a+b);
+// }
+// sum(2,3);
 
-let cube = (n) => {
-    return n*n*n;
-}
-let pow = (a,b) => {
-    return a**b;
-}
+// let cube = (n) => {
+//    return n*n*n;
+// }
+// let pow = (a,b) => {
+//     return a**b;
+// }
 // special thing about arrow function is that when the argument is single the parenthesis become optional
-let age = n =>{
-    console.log(n);
-}
+// let age = n =>{
+//     console.log(n);
+// }
 // even without any argument we can write 
-let greet = () =>{
-    console.log("hello");
-}
+// let greet = () =>{
+//     console.log("hello");
+// }
+// ---- setTimeout-----
 
+console.log("hi there");
+
+setTimeout( ()=> {
+    console.log("apna college");
+}, 4000);
+console.log("Welcome to");
 
 
 
