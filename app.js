@@ -411,7 +411,13 @@
 // }
 // console.log("hello");
 
-
+// --- Arrow functions-----
+// Arrow functions are nameless functions even they do not use function word in defining them
+// Arrow functions are generally used in higher order functions as arguments 
+// these arguments and arrow functions are called 'Callbacks'
+let sum = (a,b) => {
+    console.log(a+b);
+}
 
 
 
