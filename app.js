@@ -418,6 +418,18 @@
 let sum = (a,b) => {
     console.log(a+b);
 }
+sum(2,3);
+
+let cube = (n) => {
+    return n*n*n;
+}
+let pow = (a,b) => {
+    return a**b;
+}
+// special thing about arrow function is that when the argument is single the parenthesis become optional
+let age = n =>{
+    console.log(n);
+}
 
 
 
