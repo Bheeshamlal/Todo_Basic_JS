@@ -430,7 +430,10 @@ let pow = (a,b) => {
 let age = n =>{
     console.log(n);
 }
-
+// even without any argument we can write 
+let greet = () =>{
+    console.log("hello");
+}
 
 
 
