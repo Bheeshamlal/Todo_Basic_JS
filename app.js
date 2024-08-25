@@ -436,14 +436,21 @@
 // }
 // ---- setTimeout-----
 
-console.log("hi there");
+// console.log("hi there");
 
-setTimeout( ()=> {
-    console.log("apna college");
-}, 4000);
-console.log("Welcome to");
+// setTimeout( ()=> {
+//     console.log("apna college");
+// }, 4000);
+// console.log("Welcome to");
 
+// --- set Interval
+// after each 4 second it will print
+// setInterval(()=>{
+//     console.log("hello");
+// },4000);
 
+// to stop it we use 
+// clearInterval(id)
 
 
 
