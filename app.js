@@ -510,8 +510,18 @@
 //     return (el.marks)/10;
 // })
 
-let nums = [2,3,4,5,6,7,8,9];
-let evens = nums.filter((num)=>{
-    return num%2==0;
-});
+// let nums = [2,3,4,5,6,7,8,9];
+// let evens = nums.filter((num)=>{
+//     return num%2==0;
+// });
+
+//----every method----
+// every either returns true or false 
+// [1,2,3,4].every((el)=>(el%2==0));// returns false
+// [2,4].every((el)=>(el%2==0));// returns true
+
+
+//---- Reduce methood-----
+let nums = [1,2,3];
+nums.reduce((res,el)=>(res+el));
 
