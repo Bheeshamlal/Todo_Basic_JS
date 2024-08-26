@@ -453,6 +453,25 @@
 // clearInterval(id)
 
 
+// this in Arrow function and Normal function\
+// For Arrow Function this looks who called parent scope
+// Normal function depends on calling object
+
+
+const student = {
+    name : "Aman",
+    marks: 95,
+    prop: this,
+    getName: function () {
+        console.log(this);
+        return this.name;
+    },
+    getMarks: () => {
+        console.log(this);
+        return this.marks;
+    },
+};
+
 
 
 
