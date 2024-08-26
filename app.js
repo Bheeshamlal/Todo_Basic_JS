@@ -458,19 +458,52 @@
 // Normal function depends on calling object
 
 
-const student = {
-    name : "Aman",
-    marks: 95,
-    prop: this,
-    getName: function () {
-        console.log(this);
-        return this.name;
+// const student = {
+//     name : "Aman",
+//     marks: 95,
+//     prop: this,
+//     getName: function () {
+//         console.log(this);
+//         return this.name;
+//     },
+//     getMarks: () => {
+//         console.log(this);
+//         return this.marks;
+//     },
+// };
+
+// --forEach -----
+// const arr = [1,2,3,4,5];
+
+// function print(num){
+//     console.log(num);
+// }
+
+// arr.forEach(print);
+
+// another way is 
+// const arr = [1,2,3,4,5];
+// arr.forEach((num)=>{
+//     console.log(num);
+// })
+
+// even we can use it in objects
+const arr = [
+    {
+        name: "Bheesham",
+        marks: 99,
     },
-    getMarks: () => {
-        console.log(this);
-        return this.marks;
+    {
+        name: "Deepak",
+        marks: 99.9,
     },
-};
+    {
+        name: "Madan",
+        marks: 100,
+    }];
+    arr.forEach((student)=>{
+        console.log(student); // or we can console.log(student.marks)
+    });
 
 
 
