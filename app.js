@@ -488,24 +488,30 @@
 // })
 
 // even we can use it in objects
-const arr = [
-    {
-        name: "Bheesham",
-        marks: 99,
-    },
-    {
-        name: "Deepak",
-        marks: 99.9,
-    },
-    {
-        name: "Madan",
-        marks: 100,
-    }];
-    arr.forEach((student)=>{
-        console.log(student); // or we can console.log(student.marks)
-    });
+// const arr = [
+//     {
+//         name: "Bheesham",
+//         marks: 99,
+//     },
+//     {
+//         name: "Deepak",
+//         marks: 99.9,
+//     },
+//     {
+//         name: "Madan",
+//         marks: 100,
+//     }];
+    // arr.forEach((student)=>{
+    //     console.log(student); // or we can console.log(student.marks)
+    // });
 
+// ----map----
+// let gpa =arr.map((el)=>{
+//     return (el.marks)/10;
+// })
 
-
-
+let nums = [2,3,4,5,6,7,8,9];
+let evens = nums.filter((num)=>{
+    return num%2==0;
+});
 
