@@ -552,13 +552,39 @@
 // let isMultiple = arr.every((el)=>(el%10==0));
 
 // code for min num in an array
-let arr = [2,3,4,16,7,1,10,0];
-let min = arr.reduce((sm,el)=>{
-    if(sm<el){
-        return sm;
-    }
-    else{
-        return el;
-    }
-});
-console.log(min);
+// let arr = [2,3,4,16,7,1,10,0];
+// let min = arr.reduce((sm,el)=>{
+//     if(sm<el){
+//         return sm;
+//     }
+//     else{
+//         return el;
+//     }
+// });
+// console.log(min);
+
+//--- default parameter ----
+// function sum(a,b=2){
+//     console.log(a+b);
+// }
+// sum(1,2);
+// sum(2);
+
+//---spread---
+console.log(..."apnaCollege");
+let arr = [1,2,3,4,5];
+
+//we can use spread to find min num in array
+let minNum = Math.min(...arr);
+console.log(minNum);
+// and same to find max num
+let maxNum = Math.max(...arr); 
+console.log(maxNum);
+// copying array to new Array
+let newArr = [...arr];
+// spread with object literals
+let data = {
+    email: "bks@gmail.com",
+    password: "123",
+};
+let copyData = {...data, id:123};
