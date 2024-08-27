@@ -522,6 +522,20 @@
 
 
 //---- Reduce methood-----
-let nums = [1,2,3];
-nums.reduce((res,el)=>(res+el));
+// let nums = [1,2,3];
+// let finalValue=nums.reduce((res,el)=>{
+//     //console.log(res); this line will give value of res at each time
+//     return res+el;
+// });
 
+// -- printing max num with reduce method ----
+let nums = [1,2,3,4,5,6,7,8,9];
+let max = nums.reduce((max,el)=>{
+    if(max<el){
+        return el;
+    }
+    else{
+        return max;
+    }
+});
+console.log(max);
