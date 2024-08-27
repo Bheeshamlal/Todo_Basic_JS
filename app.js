@@ -529,13 +529,36 @@
 // });
 
 // -- printing max num with reduce method ----
-let nums = [1,2,3,4,5,6,7,8,9];
-let max = nums.reduce((max,el)=>{
-    if(max<el){
-        return el;
+// let nums = [1,2,3,4,5,6,7,8,9];
+// let max = nums.reduce((max,el)=>{
+//     if(max<el){
+//         return el;
+//     }
+//     else{
+//         return max;
+//     }
+// });
+// console.log(max);
+
+// code for check if all numbers in an array are multiple of 10
+// let arr = [10,20,30,40,50];
+// arr.every((el)=>{
+//     if(el%10==0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// });
+// let isMultiple = arr.every((el)=>(el%10==0));
+
+// code for min num in an array
+let arr = [2,3,4,16,7,1,10,0];
+let min = arr.reduce((sm,el)=>{
+    if(sm<el){
+        return sm;
     }
     else{
-        return max;
+        return el;
     }
 });
-console.log(max);
+console.log(min);
