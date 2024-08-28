@@ -571,20 +571,54 @@
 // sum(2);
 
 //---spread---
-console.log(..."apnaCollege");
-let arr = [1,2,3,4,5];
+// console.log(..."apnaCollege");
+// let arr = [1,2,3,4,5];
 
 //we can use spread to find min num in array
-let minNum = Math.min(...arr);
-console.log(minNum);
+// let minNum = Math.min(...arr);
+// console.log(minNum);
 // and same to find max num
-let maxNum = Math.max(...arr); 
-console.log(maxNum);
+// let maxNum = Math.max(...arr); 
+// console.log(maxNum);
 // copying array to new Array
-let newArr = [...arr];
+// let newArr = [...arr];
 // spread with object literals
-let data = {
-    email: "bks@gmail.com",
-    password: "123",
-};
-let copyData = {...data, id:123};
+// let data = {
+//     email: "bks@gmail.com",
+//     password: "123",
+// };
+// let copyData = {...data, id:123};
+
+//----rest method -----
+// rest is opposite to spread
+// syntax is same
+
+// function sum(...args){
+//     for(let i =0;i<args.length;i++){
+//         console.log("you gave us: ", args[i]);
+//     }
+// }
+
+// function sum(a,b){
+//     console.log(arguments);
+// }
+
+// let arr = [1,2,3,4];
+// function sum(...arr){
+// console.log( arr.reduce((sum,el)=>sum+el));
+// }
+// sum(...arr);
+
+
+//---- destructuring----------
+// let names = ["Bheesham", "Deepak","Madan","Vikram"];
+// let winner = names[0];
+// let runnerUp = names[1];
+//this aboves two lines can be done using destructuring 
+// let [winner, runnerUp] = names; // this is not an array but individual variables
+
+// what if we have many names
+let names = ["a","b","c","d","e","f","g","h","i"];
+let [winner, runnerUp, ...others] = names;
+
+ 
