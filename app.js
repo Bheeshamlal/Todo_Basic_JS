@@ -618,7 +618,16 @@
 // let [winner, runnerUp] = names; // this is not an array but individual variables
 
 // what if we have many names
-let names = ["a","b","c","d","e","f","g","h","i"];
-let [winner, runnerUp, ...others] = names;
+// let names = ["a","b","c","d","e","f","g","h","i"];
+// let [winner, runnerUp, ...others] = names;
 
- 
+// destructuring with objects
+
+const student = {
+    name: "Bheesham",
+    age: 21,
+    username: "bks@gmail.com",
+    password: "abcs",
+};
+let {username, password} = student;
+let {age: num, name} = student;
